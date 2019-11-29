@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign in to BlockChain | BlockChain Web</title>
+    <title>Sign up to BlockChain | BlockChain Web</title>
 
     <!-- [Lumen theme v3 from bootswatch distrubtion of bootstrap v3.4.1] -->
     <link rel="stylesheet" href="bootstrap/css/lumen3.css">
@@ -26,21 +26,30 @@
     <div class="container">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-            <form class="form-horizontal" method="POST" action="profile.html">
+            <form class="form-horizontal" method="POST" action="login.html">
                 <fieldset>
-                    <legend style="text-align: center">Sign in to BlockChain Web</legend>
+                    <legend style="text-align: center">Create your account</legend>
+
                     <div class="form-group">
-                        <label for="inputEmail" class="col-lg-12">Username or email address</label>
+                        <label for="inputUsername" class="col-lg-12">Username</label>
                     </div>
                     <div class="form-group">
                         <div class="col-lg-12">
-                            <input type="text" class="form-control" id="inputEmail" placeholder="Username or Email">
+                            <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-lg-12">Email address</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="inputPassword" class="col-lg-6">Password</label>
-                        <label for="forgotPassword" class="col-lg-6 control-label"><a href="recover.html">Forgot Password?</a></label>
                     </div>
                     <div class="form-group">
                         <div class="col-lg-12">
@@ -49,19 +58,24 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="inputConfirmPassword" class="col-lg-6">Confirm Password</label>
+                    </div>
+                    <div class="form-group">
                         <div class="col-lg-12">
-                            <input type="checkbox" id="inputChecked"> Remember me
+                            <input type="password" class="form-control" id="inputConfirmPassword"
+                                placeholder="Confirm Password">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-lg-12">
-                            <button type="submit" class="btn btn-primary"> Sign in</button>
+                            <button type="submit" class="btn btn-primary"> Register</button>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <div class="col-lg-12">
-                            New to BlockChain? <a href="registration.html">Create an account.</a>
+                            Already have an account? <a href="login.html"> Sign in here.</a>
                         </div>
                     </div>
                 </fieldset>
