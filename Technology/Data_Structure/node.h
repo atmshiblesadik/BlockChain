@@ -34,6 +34,7 @@ private:
     string nextNode();
     string preNode();
     nodeData *thisdata;
+    void insertData(string senderID, string receiverID, double amount);
 public:
     string generateHash();
     node(string senderID, string receiverID, double amount);
