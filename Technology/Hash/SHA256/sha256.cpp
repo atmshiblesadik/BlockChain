@@ -1,5 +1,6 @@
 #include "sha256.h"
-using namespace std;
+#include <windows.h>
+
 string SHA256::sha256(string input) {
     this -> str = input;
     return this->generate();

@@ -2,8 +2,7 @@
 #define SHA256_H
 #include <string>
 using namespace std;
-class SHA256
-{
+class SHA256 {
 protected:
     string str;
     string generate();
