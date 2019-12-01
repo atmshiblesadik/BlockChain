@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(int args, char **argc) {
+int main(int argc, char *args) {
     
     return 0;
 }
