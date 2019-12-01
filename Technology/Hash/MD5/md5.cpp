@@ -1,5 +1,4 @@
 #include "md5.h"
-#include <windows.h>
 
 string MD5::md5(string input) {
     this -> str = input;

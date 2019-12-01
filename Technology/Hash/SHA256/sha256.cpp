@@ -1,5 +1,4 @@
 #include "sha256.h"
-#include <windows.h>
 
 string SHA256::sha256(string input) {
     this -> str = input;
