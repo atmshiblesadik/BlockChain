@@ -4,6 +4,7 @@
 using namespace std;
 
 class chain { /// Singletone class
+
 private:
     static chain *instance;
     chain *headNode;
@@ -11,6 +12,7 @@ private:
     int total_size;
     chain();
     void updateChain();
+
 public:
     static chain *createBlockChain() {
         if(!instance) {
@@ -19,6 +21,7 @@ public:
         return instance;
     }
     void insertNode();
+    int size();
     ~chain();
 };
 

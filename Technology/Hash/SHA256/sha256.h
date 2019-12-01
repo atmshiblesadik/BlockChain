@@ -1,6 +1,7 @@
 #ifndef SHA256_H
 #define SHA256_H
 #include <string>
+#include "../../OS/os.h"
 using namespace std;
 class SHA256 {
 protected:

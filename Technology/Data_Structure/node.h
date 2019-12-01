@@ -1,6 +1,7 @@
 #ifndef NODE_H
 #define NODE_H
 #include <string>
+#include "../Hash/SHA256/sha256.h"
 using namespace std;
 
 struct nodeData {
