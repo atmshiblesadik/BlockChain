@@ -1,10 +1,11 @@
 #ifndef NODE_H
 #define NODE_H
+#pragma once
 #include <string>
-#include "../Hash/SHA256/sha256.h"
+#include "../Hash/sha256.h"
 using namespace std;
 
-struct nodeData {
+struct data_of_single_node {
 private:    
     // bool alreadyInsertData = false;
     string senderID;
@@ -14,7 +15,7 @@ private:
     string transactionDate;
     double amount;
 public:
-    nodeData(string senderID, string receiverID, string transactionID, string transactionType, string transactionData, double amount) {
+    data_of_single_node(string senderID, string receiverID, string transactionID, string transactionType, string transactionDate, double amount) {
         this->senderID = senderID;
         this->receiverID = receiverID;
         this->transactionID = transactionID;
@@ -27,17 +28,18 @@ public:
 
 class node {
 private:
-    string nextHash;
-    string prevHash;
-    string thisHash;
-    int thisindex;
-    string nextNode();
-    string preNode();
-    nodeData *thisdata;
-    void insertData(string senderID, string receiverID, double amount);
+    string hash_of_next_node;
+    string hash_of_previous_node;
+    string hash_of_this_node;
+    int index_of_this_node;
+    data_of_single_node *data_of_this_node;
+    void insert_data_into_this_node(string senderID, string receiverID, string transactionID, string transactionType, double amount);
+    string generate_hash_of_this_node(string senderID, string receiverID, string transactionID, string transactionType, string transactionDate, double amount, string lastHash);
+    string get_current_date_time();
+    string generate_this_transaction_id(string senderID, string receiverID, string transactionType, string transactionDate);
 public:
-    string generateHash();
-    node(string senderID, string receiverID, double amount);
+    node(string senderID, string receiverID, string transactionType, double amount, string lastHash);
+    void set_hash_value_of_next_node(string nextHash);
 };
 
 #endif

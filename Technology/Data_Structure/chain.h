@@ -1,6 +1,8 @@
 #ifndef CHAIN_H
 #define CHAIN_H
+#pragma once
 #include <string>
+#include "node.h"
 using namespace std;
 
 class chain { /// Singletone class
