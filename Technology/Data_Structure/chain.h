@@ -6,24 +6,27 @@
 using namespace std;
 
 class chain { /// Singletone class
-
 private:
-    static chain *instance;
-    chain *headNode;
-    chain *lastNode;
-    int total_size;
+    static chain *instance_of_this_block_chain;
+    node *head_node_of_block_chain;
+    node *last_node_of_block_chain;
+    int total_size_of_block_chain;
     chain();
-    void updateChain();
+    void update_this_block_chain();
 
 public:
-    static chain *createBlockChain() {
-        if(!instance) {
-            instance = new chain();
+    static chain *create_block_chain() {
+        if(!instance_of_this_block_chain) {
+            instance_of_this_block_chain = new chain();
+            return instance_of_this_block_chain;
         }
-        return instance;
+        else {
+            return NULL;
+        }
     }
-    void insertNode();
-    int size();
+    void insert_node_into_this_block_chain();
+    void update_this_block_chain();
+    int size_of_block_chain();
     ~chain();
 };
 

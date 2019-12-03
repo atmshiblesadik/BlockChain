@@ -1,21 +1,22 @@
+#pragma once
 #include "chain.h"
 
 chain::chain() {
-    this->headNode = NULL;
-    this->lastNode = headNode;
-    this->total_size = 0;
+    this->head_node_of_block_chain = NULL;
+    this->last_node_of_block_chain = head_node_of_block_chain;
+    this->total_size_of_block_chain = 0;
 }
 
-void chain::insertNode() {
+void chain::update_this_block_chain() {
 
+
+    ++this->total_size_of_block_chain;
 }
 
-void chain::updateChain() {
-    ++this->total_size;
-
+int chain::size_of_block_chain() {
+    return this->total_size_of_block_chain;
 }
 
-int chain::size() {
-    return this->total_size;
-}
+chain::~chain() {
 
+}
