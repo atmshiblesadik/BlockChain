@@ -17,6 +17,10 @@ int chain::size_of_block_chain() {
     return this->total_size_of_block_chain;
 }
 
+void chain::insert_node_into_this_block_chain() {
+    
+}
+
 chain::~chain() {
 
 }
