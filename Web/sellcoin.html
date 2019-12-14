@@ -37,20 +37,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">BlockChain</a>
+                <a class="navbar-brand" href="profile.html">BlockChain</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="payment.html">Payment</a></li>
-                    <li><a href="sendcoin.html">Send Coin</a></li>
-                    <li><a href="receivecoin.html">Receive Coin</a></li>
+                    <li><a href="sendcoin.html">Send money</a></li>
+                    <li><a href="receivecoin.html">Receive money</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">More <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="buycoin.html">Buy Coin</a></li>
-                            <li><a href="sellcoin.html">Sell Coin</a></li>
+                            <li><a href="buycoin.html">Recharge money</a></li>
+                            <li><a href="sellcoin.html">Withdraw money</a></li>
                             <li class="divider"></li>
                             <li><a href="history.html">Transaction History</a></li>
                             <li class="divider"></li>
@@ -65,7 +65,71 @@
         </div>
     </nav>
     <!-- [End Navigation bar] -->
-    <br /><br />
+    <div class="col-lg-5">
+        <form>
+            <legend style="text-align: center">Withdraw money to bank account</legend>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Bank Name</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Bank Branch</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Bank Address</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Account Name</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Account Number</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">IBAN [The International Bank
+                        Account Number]</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+                <button type="submit" class="btn btn-primary">Withdraw</button>
+        </form>
+    </div>
+
+    <div class="col-lg-2"></div>
+    <div class="col-lg-5">
+        <form>
+            <legend style="text-align: center">Withdraw money to creadit card</legend>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Name on card</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Card Number</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Card Type</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Expiry Date</label>
+                    <input type="date" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">ZIP/Postal Code</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <button type="submit" class="btn btn-primary">Withdraw</button>
+        </form>
+    </div>
 
 
 </body>

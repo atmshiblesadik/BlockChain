@@ -37,20 +37,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">BlockChain</a>
+                <a class="navbar-brand" href="profile.html">BlockChain</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="payment.html">Payment</a></li>
-                    <li><a href="sendcoin.html">Send Coin</a></li>
-                    <li><a href="receivecoin.html">Receive Coin</a></li>
+                    <li><a href="sendcoin.html">Send money</a></li>
+                    <li><a href="receivecoin.html">Receive money</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">More <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="buycoin.html">Buy Coin</a></li>
-                            <li><a href="sellcoin.html">Sell Coin</a></li>
+                            <li><a href="buycoin.html">Recharge money</a></li>
+                            <li><a href="sellcoin.html">Withdraw money</a></li>
                             <li class="divider"></li>
                             <li><a href="history.html">Transaction History</a></li>
                             <li class="divider"></li>
@@ -70,7 +70,7 @@
         <a href="#" class="btn btn-default btn-lg btn-block">WalletID: 35be1b1173d7bf0a322c3acee91f6740</a>
     </div>
     <div class="col-lg-4"></div>
-    <!-- <div class="row"> -->
+
     <div class="col-lg-5">
         <a href="#" class="btn btn-default btn-lg btn-block">Receive Payment </a>
         <!-- [Table] -->
@@ -178,7 +178,49 @@
             </tbody>
         </table>
     </div>
-    <!-- </div> -->
+
+    <br /><br /><br />
+    <!-- new payment -->
+    <div class="col-lg-4"></div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newpayment"
+        data-whatever="@mdo">Request new payment</button>
+    <div class="modal fade" id="newpayment" tabindex="-1" role="dialog" aria-labelledby="newpaymentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newpaymentLabel">New payment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Receiver Wallet-ID</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Confirm Receiver Wallet-ID</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Amount</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Confirm Amount</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 
